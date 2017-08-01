@@ -1,18 +1,28 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>
       Question
     </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
-  <button ion-button (click)="next()">
-    Next
-  </button>
-
+  <div id="questionImage" style="text-align: center;">
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <b>Description</b>
+    </ion-card-header>
+    <ion-card-content id="questionDescription">
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar (click)="next('id')">
+    <ion-title style="text-align: center">
+      Choose
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

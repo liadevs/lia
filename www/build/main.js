@@ -4,53 +4,10 @@ webpackJsonp([7],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChoicePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ChoicePage = (function () {
-    function ChoicePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    ChoicePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ChoicePage');
-    };
-    ChoicePage.prototype.next = function () {
-        this.navCtrl.popToRoot();
-    };
-    return ChoicePage;
-}());
-ChoicePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-choice',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/choice/choice.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Choice</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <button ion-button (click)="next()">\n    Home\n  </button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/choice/choice.html"*/,
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
-], ChoicePage);
-
-var _a;
-//# sourceMappingURL=choice.js.map
-
-/***/ }),
-
-/***/ 101:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChoosePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__choice_choice__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__choice_choice__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -71,31 +28,32 @@ var ChoosePage = (function () {
         console.log('ionViewDidLoad ChoosePage');
     };
     ChoosePage.prototype.next = function (i) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__choice_choice__["a" /* ChoicePage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__choice_choice__["a" /* ChoicePage */], {
+            choice: i
+        });
     };
     return ChoosePage;
 }());
 ChoosePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-choose',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Choose</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n	<button ion-button (click)="next(1)">\n    Option 1\n  </button>\n  <br>\n  <button ion-button (click)="next(2)">\n    Option 2\n  </button>\n  <br>\n  <button ion-button (click)="next(3)">\n    Option 3\n  </button>\n  <br>\n  <button ion-button (click)="next(4)">\n    Option 4\n  </button>\n  <br>\n  <button ion-button (click)="next(5)">\n    Option 5\n  </button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/,
+        selector: 'page-choose',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Choose</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div id="chooseImage" style="text-align: center;">\n    <img src="http://i.imgur.com/PTYRQRu.jpg" style="width: calc(100% - 20px);">\n  </div>\n\n  <ion-card>\n    <ion-card-content (click)="next(1)">\n      Give him the money and buy the textbook later.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(2)">\n      Avoid answering his questions.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(3)">\n      Pretend you don’t have any money and you buy the textbook by yourself.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(4)">\n      Get upset at Frank for not bringing his own money.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(5)">\n      Tell Frank that you need it to buy textbook.\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], ChoosePage);
 
-var _a;
 //# sourceMappingURL=choose.js.map
 
 /***/ }),
 
-/***/ 102:
+/***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HistoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__question_question__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__question_question__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -125,15 +83,14 @@ HistoryPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-history',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/history/history.html"*/'<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>History</ion-title>\n  </ion-navbar>\n  \n</ion-header>\n\n\n<ion-content padding>\n  <button ion-button (click)="next()">\n    Question\n  </button>\n</ion-content>'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/history/history.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], HistoryPage);
 
-var _a;
 //# sourceMappingURL=history.js.map
 
 /***/ }),
 
-/***/ 103:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -173,7 +130,7 @@ SettingsPage = __decorate([
 
 /***/ }),
 
-/***/ 104:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -213,7 +170,7 @@ PrivacyPage = __decorate([
 
 /***/ }),
 
-/***/ 105:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -253,7 +210,7 @@ LogoutPage = __decorate([
 
 /***/ }),
 
-/***/ 114:
+/***/ 113:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -262,11 +219,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 114;
+webpackEmptyAsyncContext.id = 113;
 
 /***/ }),
 
-/***/ 155:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -311,7 +268,49 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
 module.exports = webpackAsyncContext;
-webpackAsyncContext.id = 155;
+webpackAsyncContext.id = 154;
+
+/***/ }),
+
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__question_question__ = __webpack_require__(49);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage.prototype.next = function (id) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__question_question__["a" /* QuestionPage */], {
+            id: id
+        });
+    };
+    return HomePage;
+}());
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div style="text-align: center;">\n    <img src="http://i.imgur.com/TFWYiqc.png" style="width: 80%">\n  </div>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar (click)="next(\'id\')">\n    <ion-title style="text-align: center">\n      Start\n    </ion-title>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+], HomePage);
+
+//# sourceMappingURL=home.js.map
 
 /***/ }),
 
@@ -337,17 +336,17 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_history_history__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_settings_settings__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_privacy_privacy__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_logout_logout__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_question_question__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_choose_choose__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_choice_choice__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_history_history__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_settings_settings__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_privacy_privacy__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_logout_logout__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_question_question__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_choose_choose__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_choice_choice__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -431,13 +430,13 @@ AppModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Lia; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_history_history__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_settings_settings__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_privacy_privacy__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_logout_logout__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_history_history__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_settings_settings__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_privacy_privacy__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_logout_logout__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -497,55 +496,14 @@ Lia = __decorate([
 
 /***/ }),
 
-/***/ 45:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__question_question__ = __webpack_require__(50);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage.prototype.next = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__question_question__["a" /* QuestionPage */]);
-    };
-    return HomePage;
-}());
-HomePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar>\n  	<button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n  \n</ion-header>\n\n\n<ion-content padding>\n	<button ion-button (click)="next()">\n    Question\n	</button>\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
-], HomePage);
-
-var _a;
-//# sourceMappingURL=home.js.map
-
-/***/ }),
-
-/***/ 50:
+/***/ 49:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuestionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__choose_choose__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__choose_choose__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -559,27 +517,138 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var QuestionPage = (function () {
-    function QuestionPage(navCtrl) {
+    function QuestionPage(navParams, navCtrl) {
+        this.navParams = navParams;
         this.navCtrl = navCtrl;
     }
     QuestionPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad QuestionPage');
+        var id = this.navParams.get('id');
+        if (id) {
+            var description = 'You and your friend, Frank, go shopping together. \
+      Frank asks for money to buy a pair of shoes he saw, but you only have \
+      enough money to buy a school textbook, that you need as soon as possible. \
+      What should you do?';
+            var image = 'http://i.imgur.com/PTYRQRu.jpg';
+            var div = document.createElement('div');
+            div.innerHTML = description;
+            var img = document.createElement('img');
+            img.src = image;
+            img.setAttribute('style', 'width: calc(100% - 20px);');
+            document.getElementById('questionImage').appendChild(img);
+            document.getElementById('questionDescription').appendChild(div);
+        }
     };
-    QuestionPage.prototype.next = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__choose_choose__["a" /* ChoosePage */]);
+    QuestionPage.prototype.next = function (id) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__choose_choose__["a" /* ChoosePage */], {
+            id: id
+        });
     };
     return QuestionPage;
 }());
 QuestionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-question',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/question/question.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>\n      Question\n    </ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <button ion-button (click)="next()">\n    Next\n  </button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/question/question.html"*/,
+        selector: 'page-question',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/question/question.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Question\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div id="questionImage" style="text-align: center;">\n  </div>\n  <ion-card>\n    <ion-card-header>\n      <b>Description</b>\n    </ion-card-header>\n    <ion-card-content id="questionDescription">\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar (click)="next(\'id\')">\n    <ion-title style="text-align: center">\n      Choose\n    </ion-title>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/question/question.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _b || Object])
 ], QuestionPage);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=question.js.map
+
+/***/ }),
+
+/***/ 99:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChoicePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ChoicePage = (function () {
+    function ChoicePage(navParams, navCtrl) {
+        this.navParams = navParams;
+        this.navCtrl = navCtrl;
+    }
+    ChoicePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ChoicePage');
+        var choice = this.navParams.get('choice');
+        var explanation;
+        var image;
+        var title;
+        if (choice === 1) {
+            explanation = 'Even though this option seems appealing, the fact is \
+      that your education is important to the textbook. He can live without \
+      a pair of shoes, but you need the textbook. Even though friends do help \
+      each other out, weighing the pros and cons of the decisions is important, \
+      especially at your own expense.';
+            image = 'http://i.imgur.com/PTYRQRu.jpg';
+        }
+        else if (choice === 2) {
+            explanation = 'Though this option may seem appealing, Frank will only \
+      continue to question you until you answer. Avoiding his questioning is \
+      a bit rude, and doesn’t really solve the problem. Avoiding a problem is \
+      not a great way to fix a problem, either.';
+            image = "http://i.imgur.com/PTYRQRu.jpg";
+        }
+        else if (choice === 3) {
+            explanation = 'Even though this may seem like a good option, you could \
+      easily get caught, especially if you and Frank are shopping together. The \
+      best option is being upfront and telling him that you don’t have money for \
+      him. Truthfulness is important in a friendship.';
+            image = 'http://i.imgur.com/PTYRQRu.jpg';
+        }
+        else if (choice === 4) {
+            explanation = 'Even though Frank was irresponsible, being angry at him is \
+      not a good idea, because he just needs money. He probably wasn’t aware that \
+      you only had some money, so explaining your situation is the best solution.';
+            image = 'http://i.imgur.com/PTYRQRu.jpg';
+        }
+        else if (choice === 5) {
+            explanation = 'This answer is the most popular, because being straightforward \
+      and truthful about your intentions is often a good choice. If you really \
+      need something, like a school textbook, while a friend wants something smaller, \
+      like shoes, clearly your need is above the friends. Your friend wants the shoes \
+      for pleasure, while you need it for actual reasons, like education.';
+            image = 'http://i.imgur.com/PTYRQRu.jpg';
+        }
+        if (choice) {
+            title = 'Borrowing Frank';
+            var div = document.createElement('div');
+            div.innerHTML = explanation;
+            var img = document.createElement('img');
+            img.src = image;
+            img.setAttribute('style', 'width: calc(100% - 20px);');
+            document.getElementById('choiceImage').appendChild(img);
+            document.getElementById('choiceExplanation').innerHTML = explanation;
+        }
+    };
+    ChoicePage.prototype.next = function () {
+        this.navCtrl.popToRoot();
+    };
+    return ChoicePage;
+}());
+ChoicePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-choice',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/choice/choice.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Choice</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div id="choiceImage" style="text-align: center;">\n  </div>\n  <ion-card>\n    <ion-card-header>\n      <b>Explanation</b>\n    </ion-card-header>\n    <ion-card-content id="choiceExplanation">\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar (click)="next()">\n    <ion-title style="text-align: center">\n      Home\n    </ion-title>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/choice/choice.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+], ChoicePage);
+
+//# sourceMappingURL=choice.js.map
 
 /***/ })
 

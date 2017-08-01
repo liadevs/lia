@@ -1,16 +1,26 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>Choice</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
-  <button ion-button (click)="next()">
-    Home
-  </button>
-
+  <div id="choiceImage" style="text-align: center;">
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <b>Explanation</b>
+    </ion-card-header>
+    <ion-card-content id="choiceExplanation">
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar (click)="next()">
+    <ion-title style="text-align: center">
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

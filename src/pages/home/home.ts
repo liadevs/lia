@@ -12,8 +12,10 @@ export class HomePage {
   	
   }
 
-  public next(): void {
-  	this.navCtrl.push(QuestionPage);
+  public next(id): void {
+  	this.navCtrl.push(QuestionPage, {
+  		id: id
+  	});
   }
 
 }

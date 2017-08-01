@@ -1,32 +1,38 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>Choose</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+  <div id="chooseImage" style="text-align: center;">
+    <img src="http://i.imgur.com/PTYRQRu.jpg" style="width: calc(100% - 20px);">
+  </div>
 
-	<button ion-button (click)="next(1)">
-    Option 1
-  </button>
-  <br>
-  <button ion-button (click)="next(2)">
-    Option 2
-  </button>
-  <br>
-  <button ion-button (click)="next(3)">
-    Option 3
-  </button>
-  <br>
-  <button ion-button (click)="next(4)">
-    Option 4
-  </button>
-  <br>
-  <button ion-button (click)="next(5)">
-    Option 5
-  </button>
-
+  <ion-card>
+    <ion-card-content (click)="next(1)">
+      Give him the money and buy the textbook later.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content (click)="next(2)">
+      Avoid answering his questions.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content (click)="next(3)">
+      Pretend you don’t have any money and you buy the textbook by yourself.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content (click)="next(4)">
+      Get upset at Frank for not bringing his own money.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content (click)="next(5)">
+      Tell Frank that you need it to buy textbook.
+    </ion-card-content>
+  </ion-card>
 </ion-content>

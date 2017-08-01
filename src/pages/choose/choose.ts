@@ -17,7 +17,9 @@ export class ChoosePage {
   }
 
   public next(i): void {
-  	this.navCtrl.push(ChoicePage);
+  	this.navCtrl.push(ChoicePage, { 
+      choice: i
+    });
   }
 
 }

@@ -1,17 +1,23 @@
 <ion-header>
-
   <ion-navbar>
-  	<button ion-button menuToggle>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
-  
 </ion-header>
 
 
 <ion-content padding>
-	<button ion-button (click)="next()">
-    Question
-	</button>
+  <div style="text-align: center;">
+    <img src="http://i.imgur.com/TFWYiqc.png" style="width: 80%">
+  </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar (click)="next('id')">
+    <ion-title style="text-align: center">
+      Start
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
