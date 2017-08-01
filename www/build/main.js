@@ -37,7 +37,7 @@ var ChoosePage = (function () {
 ChoosePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-choose',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Choose</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div id="chooseImage" style="text-align: center;">\n    <img src="http://i.imgur.com/PTYRQRu.jpg" style="width: calc(100% - 20px);">\n  </div>\n\n  <ion-card>\n    <ion-card-content (click)="next(1)">\n      Give him the money and buy the textbook later.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(2)">\n      Avoid answering his questions.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(3)">\n      Pretend you don’t have any money and you buy the textbook by yourself.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(4)">\n      Get upset at Frank for not bringing his own money.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(5)">\n      Tell Frank that you need it to buy textbook.\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/,
+        selector: 'page-choose',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Choose</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div id="chooseImage" style="text-align: center;">\n    <img src="http://i.imgur.com/QGCmalm.png" style="width: calc(100% - 20px);">\n  </div>\n\n  <ion-card>\n    <ion-card-content (click)="next(1)">\n      Give him the money and buy the textbook later.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(2)">\n      Avoid answering his questions.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(3)">\n      Pretend you don’t have any money and you buy the textbook by yourself.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(4)">\n      Get upset at Frank for not bringing his own money.\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-content (click)="next(5)">\n      Tell Frank that you need it to buy textbook.\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/choose/choose.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], ChoosePage);
@@ -305,7 +305,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div style="text-align: center;">\n    <img src="http://i.imgur.com/TFWYiqc.png" style="width: 80%">\n  </div>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar (click)="next(\'id\')">\n    <ion-title style="text-align: center">\n      Start\n    </ion-title>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div style="text-align: center;">\n    <img src="http://i.imgur.com/TFWYiqc.png" style="width: 80%">\n  </div>\n  <div>\n    <ion-card (click)="next(\'id\')">\n      <ion-card-content>\n        Borrowing Frank\n      </ion-card-content>\n    </ion-card>\n    <ion-card>\n      <ion-card-content>\n        Angry Irene\n      </ion-card-content>\n    </ion-card>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], HomePage);
@@ -529,7 +529,7 @@ var QuestionPage = (function () {
       Frank asks for money to buy a pair of shoes he saw, but you only have \
       enough money to buy a school textbook, that you need as soon as possible. \
       What should you do?';
-            var image = 'http://i.imgur.com/PTYRQRu.jpg';
+            var image = 'http://i.imgur.com/QGCmalm.png';
             var div = document.createElement('div');
             div.innerHTML = description;
             var img = document.createElement('img');
@@ -551,10 +551,9 @@ QuestionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-question',template:/*ion-inline-start:"/Users/wiwang/Downloads/lia/src/pages/question/question.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Question\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div id="questionImage" style="text-align: center;">\n  </div>\n  <ion-card>\n    <ion-card-header>\n      <b>Description</b>\n    </ion-card-header>\n    <ion-card-content id="questionDescription">\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar (click)="next(\'id\')">\n    <ion-title style="text-align: center">\n      Choose\n    </ion-title>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/wiwang/Downloads/lia/src/pages/question/question.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], QuestionPage);
 
-var _a, _b;
 //# sourceMappingURL=question.js.map
 
 /***/ }),
@@ -594,7 +593,7 @@ var ChoicePage = (function () {
       a pair of shoes, but you need the textbook. Even though friends do help \
       each other out, weighing the pros and cons of the decisions is important, \
       especially at your own expense.';
-            image = 'http://i.imgur.com/PTYRQRu.jpg';
+            image = 'http://i.imgur.com/bx0hqKz.png';
         }
         else if (choice === 2) {
             explanation = 'Though this option may seem appealing, Frank will only \
@@ -622,7 +621,7 @@ var ChoicePage = (function () {
       need something, like a school textbook, while a friend wants something smaller, \
       like shoes, clearly your need is above the friends. Your friend wants the shoes \
       for pleasure, while you need it for actual reasons, like education.';
-            image = 'http://i.imgur.com/PTYRQRu.jpg';
+            image = 'http://i.imgur.com/1WaT2Tz.png';
         }
         if (choice) {
             title = 'Borrowing Frank';
