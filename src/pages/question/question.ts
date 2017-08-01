@@ -22,7 +22,7 @@ export class QuestionPage {
       Frank asks for money to buy a pair of shoes he saw, but you only have \
       enough money to buy a school textbook, that you need as soon as possible. \
       What should you do?';
-      var image = 'http://i.imgur.com/PTYRQRu.jpg';
+      var image = 'http://i.imgur.com/QGCmalm.png';
 
       var div = document.createElement('div');
       div.innerHTML = description;

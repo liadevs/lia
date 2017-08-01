@@ -25,7 +25,7 @@ export class ChoicePage {
       a pair of shoes, but you need the textbook. Even though friends do help \
       each other out, weighing the pros and cons of the decisions is important, \
       especially at your own expense.';
-      image = 'http://i.imgur.com/PTYRQRu.jpg';
+      image = 'http://i.imgur.com/bx0hqKz.png';
     } else if (choice === 2) {
       explanation = 'Though this option may seem appealing, Frank will only \
       continue to question you until you answer. Avoiding his questioning is \
@@ -49,7 +49,7 @@ export class ChoicePage {
       need something, like a school textbook, while a friend wants something smaller, \
       like shoes, clearly your need is above the friends. Your friend wants the shoes \
       for pleasure, while you need it for actual reasons, like education.';
-      image = 'http://i.imgur.com/PTYRQRu.jpg';
+      image = 'http://i.imgur.com/1WaT2Tz.png';
     }
 
     if (choice) {
